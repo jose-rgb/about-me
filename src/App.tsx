@@ -1,4 +1,4 @@
-import { EnvelopeSimple, GithubLogo, LinkedinLogo, TagChevron, WhatsappLogo } from "@phosphor-icons/react"
+import { Briefcase, CalendarBlank, EnvelopeSimple, GithubLogo, LinkedinLogo, TagChevron, WhatsappLogo } from "@phosphor-icons/react"
 import cv from "./assets/cv.pdf"
 import ImgMe from "./assets/me.png"
 import { toast } from 'react-toastify'
@@ -26,7 +26,7 @@ export function App() {
         </div>
       </header>
 
-      <main className="flex justify-center mt-32 h-[70%]">
+      <main className="flex justify-center mt-32 h-[90%]">
         <div className="flex items-center justify-between w-[90%] p-20">
 
           <div className="text-2xl">
@@ -48,15 +48,19 @@ export function App() {
         </div>
       </main>
 
-      <main id="about" className="flex bg-[#151515] justify-center mt-24 h-[90%]">
-        <div className="w-[90%] p-20">
 
-          <div className="flex gap-2 text-[#00A3FF] mt-10">
+      <main id="about" className="flex bg-[#151515] justify-center mt-24 h-[90%]">
+        <div className="w-[70%] p-20">
+
+          <div className="flex w-[100%] flex items-center justify-center gap-2 text-[#00A3FF] mt-10">
             <TagChevron size={32}  weight="thin" />
             <h1 className="text-2xl">Sobre mim</h1>
           </div>
 
-          <p className="mt-10">Sou aluno do curso de tecnologia em Análise e Desenvolvimento de sistemas no Instituto Federal do Piauí. onde ingressei em 2020, desde então estudo frequentemente vária tecnologias, sendo as de Front End que mais me chamam atenção, no entanto, estudo também o desenvolvimento de Rest APIs e aplicativos multiplataforma.</p>
+          <p className="mt-10">Sou aluno do curso de tecnologia em Análise e Desenvolvimento de sistemas no Instituto Federal do Piauí. 
+            onde ingressei em 2020, desde então estudo frequentemente vária tecnologias, sendo as de Front End que mais me chamam atenção, 
+            no entanto, estudo também o desenvolvimento de Rest APIs e aplicativos multiplataforma. Atualmente focado em ser um desenvolvedor Full Stack
+            focado no universo do Javascript.</p>
 
           <ul className="w-[100%] mt-24 flex justify-center gap-10">
             <li>
@@ -100,13 +104,77 @@ export function App() {
       </main>
 
 
-      <main className="flex justify-center mt-24 h-[70%]">
-        <div className="flex items-center justify-between w-[90%] p-20">
+      <main id="experience" className="flex justify-center mt-24 h-[90%]">
+        <div className="w-[90%] p-20">
+
+          <div className="w-[100%] flex items-center justify-center gap-2 text-[#00A3FF] mb-10">
+            <Briefcase size={32}  weight="thin" />
+            <h1 className="text-2xl">Experiência</h1>
+          </div>
+
+          <div className="flex items-center  border-b-2 border-[#151515]  justify-center">
+            <div className="w-[30%] mt-26 ml-40">
+              <p>1 ano</p>
+            </div>
 
 
+            <div className="w-[40%]  border-l-2 border-[#151515]  p-4 text-sm">
+              <h1><strong className="text-[#00A3FF] ">Estagiário</strong> na empresa: <strong>Alemanha Veículos</strong></h1>
+              <p className="flex items-center my-2 gap-2"><CalendarBlank size={16} color="#ffffff" weight="fill" /> Março/2022 ⇾ Março/2023</p>
+              <p>Principais habilidades usadas: <strong className="text-[#00A3FF] ">Ruby on Rails, ReactJs, React Native </strong></p>
+              <br />
+              <strong>Descrição das atividades:</strong>
+              <p>Por meio do home office auxiliava na manutenção de projetos internos
+                com o framework Ruby on Rails, especialmente na sua versão 6. Além da
+                utilização do software Jira para desenvolvimento ágil com a metodologia
+                Scrum, e com seus rituais, como Daily Meetings, Sprint Review e Planning. Além
+                do Slack para manter comunicação. Também acompanhei o desenvolvimento do aplicativo Meio Norte Play feito em React Native para a empresa filial Meio Norte TV.
+              </p>
+            </div>
+          </div>
+
+
+          <div className="flex items-center border-b-2 border-[#151515]  justify-center">
+            <div className="w-[30%] mt-26 ml-40">
+              <p>1 ano e 11 meses</p>
+            </div>
+
+
+            <div className="w-[40%]  border-l-2 border-[#151515]  p-4 text-sm">
+              <h1><strong className="text-[#00A3FF] mt-4">Estagiário</strong> na empresa: <strong>Agespisa</strong></h1>
+              <p className="flex items-center my-2 gap-2"><CalendarBlank size={16} color="#ffffff" weight="fill" />  Abril/2020 ⇾  Março/2022</p>
+              <p>Principais habilidades usadas: <strong className="text-[#00A3FF] ">Javascript, HTML5, CSS3, JavaEE </strong></p>
+              <br />
+              <strong>Descrição das atividades:</strong>
+              <p>
+                Devido a Águas e Esgotos do Piauí (Agespisa), ser uma empresa pública e com sistemas legados, meu papel como estagiário 
+                se dava em alterar pequenas funcionalidades do layout de paginas web, modificando o css, html e javascript dos sistemas feitos em Java Platform, Enterprise Edition (Java EE).
+              </p>
+            </div>
+          </div>
+
+
+          <div className="flex items-center justify-center">
+            <div className="w-[30%] mt-26 ml-40">
+              <p>2 anos</p>
+            </div>
+
+            <div className="w-[40%]  border-l-2 border-[#151515]  p-4 text-sm">
+              <h1><strong className="text-[#00A3FF] mt-4">Jovem Aprendiz</strong> na empresa: <strong>Agespisa</strong></h1>
+              <p className="flex items-center my-2 gap-2"><CalendarBlank size={16} color="#ffffff" weight="fill" /> Abril/2018 ⇾  Abril/2020</p>
+              <p>Principais habilidades usadas: <strong className="text-[#00A3FF] ">Formatação de computadores, Softwares de acesso remoto </strong></p>
+              <br />
+              <strong>Descrição das atividades:</strong>
+              <p>
+                Auxiliava no suporte a colaboradores da empresa, tanto na sede em Teresina, como nos 
+                interiores do Piauí de forma presencial e online pelos programas VNC, TeamViewer e AnyDesk.
+              </p>
+            </div>
+          </div>
 
         </div>
       </main>
+
 
     </div>
   )

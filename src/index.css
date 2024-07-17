@@ -5,10 +5,3 @@
 * {
   min-width: 0;
 }
-
-#gradient {
-  background: radial-gradient(circle, rgba(0,106,168,1) -100%, rgba(9,9,11,1) 59%);
-}
-
-
-/*background: radial-gradient(circle, rgba(0,44,60,0.6110819327731092) 0%, rgba(0,0,0,1) 100%);*/

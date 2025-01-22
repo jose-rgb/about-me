@@ -31,7 +31,7 @@ export function App() {
       <main className=" flex flex-col  items-center">
 
         <div className="flex items-center justify-between w-[90%] h-[1000px] p-20">
-          <div className="text-2xl mb-20">
+          <div className="text-2xl mb-64">
             <h1>Olá, me chamo</h1>
             <span className="text-5xl font-bold text-[#00A3FF]">José Ricardo</span>
             <h1>Desenvolvedor Full Stack</h1>
@@ -43,8 +43,8 @@ export function App() {
             </a>
           </div>
 
-          <div className="rounded-full p-10 mb-24">
-            <img src={ImgMe} alt="developer" className="w-[500px] rounded-b-full border-b-8 border-[#00A3FF]"/>
+          <div className="rounded-full p-10 mb-64">
+            <img src={ImgMe} alt="developer" className="w-[300px] rounded-b-full border-b-8 border-[#00A3FF]"/>
           </div>
         </div>
    
